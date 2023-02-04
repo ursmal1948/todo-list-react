@@ -11,38 +11,22 @@
 
 .buttons__button {
     margin: 0 0 0 20px;
+    color: teal;
+    border: none;
+    background-color: inherit;
+    font-size: 15px;
+    transition: 1s;
+}
+
+.buttons__button:hover {
+    color: hsl(180, 100%, 35%);
 }
 
 @media (max-width:767px) {
     .buttons__button {
-        flex-basis: 100%;  
-        margin: 10px;      
+        flex-basis: 100%;
+        margin: 10px;
     }
-}
-
-.hideShowButton {
-    color: teal;
-    border: none;
-    background-color: inherit;
-    font-size: 15px;
-    transition: 1s;
-}
-
-.hideShowButton:hover {
-    color: hsl(180, 100%, 35%);
-}
-
-.completeAllButton {
-    color: teal;
-    border: none;
-    background-color: inherit;
-    margin-right: 15px;
-    font-size: 15px;
-    transition: 1s;
-}
-
-.completeAllButton:hover {
-    color: hsl(180, 100%, 35%);
 }
 
 .completeAllButton:disabled {
