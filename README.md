@@ -2,7 +2,21 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Demo
-Be welcome to visit [my website](https://ursmal1948.github.io/todo-list-react/)
+Be welcome to visit my [website](https://ursmal1948.github.io/todo-list-react/)
+
+## Description
+ To do list is the project made within the course Frontend Developer at online school YouCode. This app allows user to add, remove and mark tasks as done.
+
+ ## Tools used in this project
+ - HTML
+ - JavaScript
+ - CSS
+ - BEM
+ - ES6 + Features
+ - Grid
+ - Flex
+ - React
+
 
 ## Available Scripts
 
