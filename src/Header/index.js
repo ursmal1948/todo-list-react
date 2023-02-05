@@ -1,9 +1,9 @@
 import React from "react"
 import "./style.css"
 
-const Header = (props) => (
+const Header = ({ title }) => (
     <header>
-        <h1 className="header">{props.title}</h1>
+        <h1 className="header">{title}</h1>
     </header>
 );
 

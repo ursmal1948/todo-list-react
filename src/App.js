@@ -17,7 +17,7 @@ function App() {
         <Container>
             <Header title="Lista zadań" />
             <Section title="Dodaj nowe zadanie"
-                body={<Form />}
+                body={<Form title="Dodaj zadanie" />}
             />
             <Section title="Lista zadań"
                 extraHeaderContent={
