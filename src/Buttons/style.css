@@ -16,6 +16,7 @@
     background-color: inherit;
     font-size: 15px;
     transition: 1s;
+    margin-right: 10px;
 }
 
 .buttons__button:hover {
