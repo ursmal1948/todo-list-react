@@ -16,10 +16,12 @@ function App() {
     return (
         <Container>
             <Header title="Lista zadań" />
-            <Section title="Dodaj nowe zadanie"
+            <Section
+                title="Dodaj nowe zadanie"
                 body={<Form title="Dodaj zadanie" />}
             />
-            <Section title="Lista zadań"
+            <Section
+                title="Lista zadań"
                 extraHeaderContent={
                     <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />
                 }
