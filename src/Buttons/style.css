@@ -18,6 +18,9 @@
     transition: 1s;
     margin-right: 10px;
 }
+.buttons__button:disabled {
+    color: rgb(184, 179, 179);
+}
 
 .buttons__button:hover {
     color: hsl(180, 100%, 35%);
@@ -30,6 +33,3 @@
     }
 }
 
-.completeAllButton:disabled {
-    color: rgb(184, 179, 179);
-}
