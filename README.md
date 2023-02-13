@@ -3,8 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Demo
 Be welcome to visit my [website](https://ursmal1948.github.io/todo-list-react/)
-Feel free to visit my
-<a href="https://ursmal1948.github.io/todo-list-react/" target="_blank">website</a>
+
 
 ## Description
  To do list is the project made within the course Frontend Developer at online school YouCode. This app allows user to add, remove and mark tasks as done.
