@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
@@ -8,12 +8,17 @@ import Container from "./Container";
 
 
 function App() {
+
+
+
     const [hideDone, setHideDone] = useState(false)
-    const [tasks, setTasks] = useState([
-        { id: 1, content: "Zrobić pranie", done: true },
-        { id: 4, content: "Pójść na spacer", done: false },
-        { id: 2, content: "Powtórzyć gramatyke", done: true },
-    ]);
+    const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")) ||
+        []
+    );
+
+    useEffect(() => {
+        localStorage.setItem("tasks", JSON.stringify(tasks))
+    }, [tasks])
 
     const toggleHideDone = () => {
         setHideDone(hideDone => !hideDone)
