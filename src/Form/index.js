@@ -1,5 +1,4 @@
 import { useState, useRef } from "react";
-import "./style.css"
 import {StyledForm, Field, Button } from "./styled";
 
 const Form = ({ title, addNewTask, className }) => {

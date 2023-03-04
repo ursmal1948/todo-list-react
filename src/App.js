@@ -62,20 +62,24 @@ function App() {
             <StyledHeader title="Lista zadań" />
             <Section
                 title="Dodaj nowe zadanie"
-                body={<Form
-                    addNewTask={addNewTask}
-                    title="Dodaj zadanie" />}
+                body={
+                <Form
+                addNewTask={addNewTask}
+                title="Dodaj zadanie" />
+                }
             />
             <Section
                 title="Lista zadań"
                 extraHeaderContent={
-                    <Buttons tasks={tasks}
-                        hideDone={hideDone}
-                        toggleHideDone={toggleHideDone}
-                        setAllDone={setAllDone}
+                    <Buttons 
+                    tasks={tasks}
+                    hideDone={hideDone}
+                    toggleHideDone={toggleHideDone}
+                    setAllDone={setAllDone}
                     />
                 }
-                body={
+                body=
+                {
                     <Tasks
                         tasks={tasks}
                         hideDone={hideDone}
@@ -84,7 +88,6 @@ function App() {
                     />
                 }
             />
-
         </StyledContainer>
     );
 }
