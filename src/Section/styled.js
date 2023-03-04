@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledSection = styled.section`
   border: 1px solid #ddd;
-  background-color: white;
+  background-color: ${({theme}) => theme.colors.primaryColor };
   margin: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `;
@@ -15,8 +15,8 @@ export const Header = styled.header`
   grid-gap: 10px;
   border-bottom: 1.5px solid #ddd;
 
-  @media (max-width: 767px) {
-    grid-template-columns: 1fr;
+  @media (max-width:${({theme}) => theme.breakpoints.mobile }px) {
+    grid-template-columns: 1fr ;
     padding-bottom: 25px;
     gap: 5px;
   }

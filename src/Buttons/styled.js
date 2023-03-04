@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const SectionButtons = styled.div`
   display: flex;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({theme}) => theme.breakpoints.mobile}px) {
     flex-wrap: wrap;
   }
 `;
@@ -27,7 +27,7 @@ export const Button = styled.button`
     color: hsl(180, 100%, 35%);
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({theme}) => theme.breakpoints.mobile }px) {
     flex-basis: 100%;
     margin: 10px;
   }

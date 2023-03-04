@@ -6,7 +6,7 @@ export const StyledContainer = styled(Container)`
   margin: 0 auto;
   margin-top: 60px;
 
-  @media (max-width:767px) {
+  @media (max-width:${({theme}) => theme.breakpoints.mobile}px) {
        margin-left: 10px;
        margin-right: 20px;
 }
