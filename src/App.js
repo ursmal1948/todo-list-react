@@ -6,16 +6,7 @@ import Section from "./Section";
 import { StyledContainer } from './Container/styled';
 import { StyledHeader } from './Header/styled';
 import { ThemeProvider } from 'styled-components';
-
-
-const theme = {
-    colors: {
-        primaryColor:"white",
-    },
-    breakpoints: {
-         mobile:767,
-    }
-}
+import {theme} from "./theme"
 
 const getInitialTasks = () => {
     const tasksFromLocalStorage = localStorage.getItem("tasks");
