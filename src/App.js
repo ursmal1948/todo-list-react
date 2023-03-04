@@ -5,6 +5,17 @@ import Buttons from "./Buttons";
 import Section from "./Section";
 import { StyledContainer } from './Container/styled';
 import { StyledHeader } from './Header/styled';
+import { ThemeProvider } from 'styled-components';
+
+
+const theme = {
+    colors: {
+        primaryColor:"white",
+    },
+    breakpoints: {
+         mobile:767,
+    }
+}
 
 const getInitialTasks = () => {
     const tasksFromLocalStorage = localStorage.getItem("tasks");
@@ -58,6 +69,7 @@ function App() {
     };
 
     return (
+        <ThemeProvider theme={theme}>
         <StyledContainer>
             <StyledHeader title="Lista zadań" />
             <Section
@@ -89,6 +101,7 @@ function App() {
                 }
             />
         </StyledContainer>
+        </ThemeProvider>
     );
 }
 
