@@ -15,11 +15,13 @@ Be welcome to visit my [website](https://ursmal1948.github.io/todo-list-react/)
  - HTML
  - JavaScript
  - CSS
- - BEM
  - ES6 + Features
  - Grid
  - Flex
+ - Media Queries
  - React
+ - Styled-Components
+ - ThemeProvider
 
 
 ## Available Scripts
