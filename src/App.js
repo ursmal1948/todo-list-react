@@ -3,8 +3,8 @@ import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
-import Header from "./Header";
 import { StyledContainer } from './Container/styled';
+import { StyledHeader } from './Header/styled';
 
 const getInitialTasks = () => {
     const tasksFromLocalStorage = localStorage.getItem("tasks");
@@ -59,7 +59,7 @@ function App() {
 
     return (
         <StyledContainer>
-            <Header title="Lista zadań" />
+            <StyledHeader title="Lista zadań" />
             <Section
                 title="Dodaj nowe zadanie"
                 body={<Form
