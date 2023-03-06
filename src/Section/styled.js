@@ -19,7 +19,7 @@ export const Header = styled.header`
     grid-template-columns: 1fr ;
     padding-bottom: 25px;
     gap: 5px;
-  }
+  };
 `;
 
 export const Title = styled.h2`

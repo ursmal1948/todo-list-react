@@ -36,9 +36,7 @@ export const Button = styled.button`
   color: ${({theme}) => theme.colors.primaryColor };
   border: none;
 
-  ${({ done }) =>
-    done &&
-    css`
+  ${({ done }) => done && css`
       background-color: #2e8832;
       transition: 2s;
 
@@ -48,22 +46,20 @@ export const Button = styled.button`
 
       &:active {
         border: 2px solid black;
-      }
-    `}
+      };
+    `};
 
-  ${({ remove }) =>
-    remove &&
-    css`
+  ${({ remove }) => remove && css`
       background: red;
       transition: 2s;
 
       &:hover {
         background: hsl(0, 100%, 70%);
-      }
+      };
 
       &:active {
         border: 2px solid black;
 
-      }
-    `}
+      };
+    `};
 `;

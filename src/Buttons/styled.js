@@ -5,7 +5,7 @@ export const SectionButtons = styled.div`
 
   @media (max-width: ${({theme}) => theme.breakpoints.mobile}px) {
     flex-wrap: wrap;
-  }
+  };
 `;
 
 export const Button = styled.button`
@@ -17,18 +17,16 @@ export const Button = styled.button`
   transition: 1s;
   margin-right: 10px;
 
-  ${({ disabled }) =>
-    disabled &&
-    css`
+  ${({ disabled }) => disabled && css`
       color: rgb(184, 179, 179);
-    `}
+    `};
 
   &:hover {
     color: hsl(180, 100%, 35%);
-  }
+  };
 
   @media (max-width: ${({theme}) => theme.breakpoints.mobile }px) {
     flex-basis: 100%;
     margin: 10px;
-  }
+  };
 `;

@@ -5,8 +5,8 @@ const Form = ({ title, addNewTask, className }) => {
 
     const inputRef = useRef(null)
     const setFocus = () => {
-        inputRef.current.focus()
-    }
+        inputRef.current.focus();
+    };
 
     const [newTaskContent, setNewTaskContent] = useState("");
 
@@ -15,7 +15,7 @@ const Form = ({ title, addNewTask, className }) => {
         const trimmedNewTaskContent = newTaskContent.trim();
         trimmedNewTaskContent !== "" && (
             addNewTask(trimmedNewTaskContent)
-        )
+        );
         setNewTaskContent("");
         setFocus();
     };
@@ -34,7 +34,7 @@ const Form = ({ title, addNewTask, className }) => {
                 {title}
             </Button>
         </StyledForm>
-    )
+    );
 };
 
 export default Form;

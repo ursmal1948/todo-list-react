@@ -16,7 +16,7 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => {
                     Ukończ wszystkie
                 </Button>
             </SectionButtons>
-        ))
+        ));
 };
 
 export default Buttons;

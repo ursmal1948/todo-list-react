@@ -12,7 +12,7 @@ export const StyledForm = styled.form`
   @media (max-width: ${({theme}) => theme.breakpoints.mobile}px) {
     grid-template-columns: 1fr;
     grid-gap: 10px;
-  }
+  };
 `;
 
 export const Field = styled.input`
@@ -22,7 +22,7 @@ export const Field = styled.input`
     height: 35px;
     margin-left: 2px;
     margin-right: 2px;
-  }
+  };
 `;
 
 export const Button = styled.button`
@@ -36,5 +36,5 @@ export const Button = styled.button`
   &:hover {
     background: hsl(180, 100%, 30%);
     transform: scale(1.1);
-  }
+  };
 `;
