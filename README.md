@@ -21,7 +21,8 @@ Be welcome to visit my [website](https://ursmal1948.github.io/todo-list-react/)
  - Media Queries
  - React
  - Styled-Components
- - ThemeProvider
+ - ThemeProvider Component
+ - GlobalStyle Component
 
 
 ## Available Scripts
