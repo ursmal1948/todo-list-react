@@ -28,3 +28,7 @@ export const Title = styled.h2`
   padding-left: 15px;
   font-family: Lato, "sans-serif";
 `;
+
+export const Body = styled.div`
+
+`
