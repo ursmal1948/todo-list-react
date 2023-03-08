@@ -3,12 +3,12 @@ import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
-import { StyledContainer } from "./Container/styled";
-import { StyledHeader } from "./Header/styled";
+import { Container } from "./Container";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./styles/theme";
 import { useTasks } from "./useTasks";
 import { GlobalStyle } from "./styles/globalStyles";
+import { Header } from "./Header/index"
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
@@ -27,9 +27,9 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <StyledContainer>
+      <Container>
         <GlobalStyle />
-        <StyledHeader title="Lista zadań" />
+        <Header>Lista zadań</Header>
         <Section
           title="Dodaj nowe zadanie"
           body={<Form addNewTask={addNewTask} title="Dodaj zadanie" />}
@@ -53,7 +53,7 @@ function App() {
             />
           }
         />
-      </StyledContainer>
+      </Container>
     </ThemeProvider>
   );
 }
