@@ -17,9 +17,9 @@ export const Button = styled.button`
   transition: 1s;
   margin-right: 10px;
 
-  ${({ disabled }) => disabled && css`
-      color: rgb(184, 179, 179);
-    `};
+  &:disabled {
+    color: rgb(184, 179, 179);
+  }
 
   &:hover {
     color: hsl(180, 100%, 35%);

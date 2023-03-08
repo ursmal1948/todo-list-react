@@ -1,7 +1,6 @@
 import { Button, SectionButtons } from "./styled";
 
-const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => {
-    return (
+const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
         tasks.length > 0 && (
             <SectionButtons>
                 <Button
@@ -17,6 +16,6 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => {
                 </Button>
             </SectionButtons>
         ));
-};
+;
 
 export default Buttons;
