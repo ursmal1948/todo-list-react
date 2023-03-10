@@ -14,14 +14,14 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
                     {task.done
                         ? "✔" : ""}
                 </Button>
-                <Content 
+            <Content 
                 done={task.done} 
                 >
                 {task.content}
-                </Content>
+            </Content>
                 <Button
-                remove
-                onClick={() => removeTask(task.id)}
+                  remove
+                  onClick={() => removeTask(task.id)}
                 >
                 🗑
                 </Button>
