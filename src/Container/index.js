@@ -1,12 +1,7 @@
-import styled from "styled-components";
+import { StyledContainer } from "./styled"
 
-export const Container = styled.main`
-  max-width: 750px;
-  margin: 0 auto;
-  margin-top: 60px;
-
-  @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
-       margin-left: 10px;
-       margin-right: 20px;
-  }
-`;
+export const Container = ({ children }) => (
+    <StyledContainer>
+        {children}
+    </StyledContainer>
+)
