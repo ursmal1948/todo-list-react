@@ -13,13 +13,13 @@ export const Header = styled.header`
   justify-content: space-between;
   align-items: center;
   grid-gap: 10px;
-  border-bottom: 1.5px solid ${({theme}) => theme.colors.grey };
+  border-bottom: 1.5px solid ${({ theme }) => theme.colors.grey};
 
-  @media (max-width:${({theme}) => theme.breakpoints.mobile }px) {
-    grid-template-columns: 1fr ;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    grid-template-columns: 1fr;
     padding-bottom: 25px;
     gap: 5px;
-  };
+  } ;
 `;
 
 export const Title = styled.h2`
@@ -29,6 +29,4 @@ export const Title = styled.h2`
   font-family: Lato, "sans-serif";
 `;
 
-export const Body = styled.div`
-
-`
+export const Body = styled.div``;
