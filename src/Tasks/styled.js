@@ -33,28 +33,28 @@ export const Content = styled.span`
 export const Button = styled.button`
   height: 25px;
   width: 25px;
-  color: ${({theme}) => theme.colors.primaryColor };
+  color: ${({theme}) => theme.colors.white };
   border: none;
 
       &:active {
-        border: 2px solid black;
+        border: 2px solid ${({theme}) => theme.colors.black};
       };
 
       ${({ done }) => done && css`
-        background-color: #2e8832;
+        background-color: ${({theme}) => theme.colors.green};
         transition: 2s;
 
       &:hover {
-        background-color: hsl(122, 49%, 45%);
+        background-color: ${({theme}) => theme.colors.lightGreen};
       }
     `};
 
   ${({ remove }) => remove && css`
-      background: red;
+      background: ${({theme}) => theme.colors.red};
       transition: 2s;
 
       &:hover {
-        background: hsl(0, 100%, 70%);
+        background:${({theme}) => theme.colors.lightRed};
       };
     `};
 `;
