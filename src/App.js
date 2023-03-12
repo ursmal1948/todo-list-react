@@ -27,8 +27,8 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
+    <GlobalStyle />
       <Container>
-        <GlobalStyle />
         <Header>Lista zadań</Header>
         <Section
           title="Dodaj nowe zadanie"

@@ -15,7 +15,7 @@ export const StyledForm = styled.form`
   } ;
 `;
 
-export const Field = styled.input`
+export const Input = styled.input`
   padding-left: 10px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
@@ -26,7 +26,7 @@ export const Field = styled.input`
 `;
 
 export const Button = styled.button`
-  background: hsl(180, 100%, 25%);
+  background: ${({ theme }) => theme.colors.teal};
   color: ${({ theme }) => theme.colors.white};
   border: none;
   border-radius: 2px;
@@ -34,7 +34,7 @@ export const Button = styled.button`
   transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
   &:hover {
-    background: hsl(180, 100%, 30%);
+    filter: brightness(120%);
     transform: scale(1.1);
   }
 `;
