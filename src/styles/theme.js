@@ -10,6 +10,7 @@ export const theme = {
     lightGreen: "#3bab3e",
     red: "#ff0000",
     lightRed: "#ff6666",
+    gallery: "#eee",
   },
   breakpoints: {
     mobile: 767,
