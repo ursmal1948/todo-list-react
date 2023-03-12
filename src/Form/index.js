@@ -28,9 +28,7 @@ const Form = ({ title, addNewTask, className }) => {
                 placeholder="Co jest do zrobienia?"
                 onChange={(event) => setNewTaskContent(event.target.value)}
             />
-            <Button
-                onClick={setFocus}
-                >
+            <Button>
                 {title}
             </Button>
         </StyledForm>
